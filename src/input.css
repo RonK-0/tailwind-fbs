@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply 
+    w-full mx-auto px-[15px]
+    /* md:max-w-full  */
+    lg:max-w-[970px] xl:max-w-[1170px]
+}
+
+@layer base {
+    body{
+        @apply font-text-nm
+        /* leading-[1.6] font-normal; */
+    }
+  }
+
+@layer components{
+    /* body.open{  
+        @apply overflow-hidden;
+    } */
+
+    /* START OF HEADER */
+    /* .header{
+        @apply fixed top-0
+        lg:static z-50
+        w-full bg-white
+    }
+
+    .header__contact_d ul>li{
+        @apply mx-2;
+    }
+    .header__wrapper ul>li>i{
+        @apply mr-1
+    }
+    .nav{
+        @apply bg-light
+        w-full h-screen px-0 pt-0 
+        absolute top-[95px] left-[100%] z-[99] 
+        flex  flex-col items-center
+        lg:static lg:h-fit lg:w-full
+        my-5 lg:my-2
+        transition-all duration-300 ease-in-out;
+    }
+    .nav.open{
+        @apply 
+        top-[95px] left-0
+        flex flex-col
+        transition-all duration-300;
+    }
+    .nav a{
+        @apply block text-center;
+    }
+    .nav ul>li{
+        @apply my-3 border-l-2 border-l-gray-300;
+    }
+    .nav ul>li>a{
+        @apply p-2
+    }
+    .nav ul>li:first-child {
+        @apply border-none
+    }
+    .nav a.btn{
+        @apply px-8;
+    }
+    .nav ul li:last-child a {
+        @apply w-[113px] mx-auto
+    } */
+
+    /* .burger */
+    /* .burger {
+        @apply duration-500 cursor-pointer;
+    }
+    .burger.active{
+        @apply transition-all duration-500 rotate-180;
+    }
+    .burger span {
+        @apply w-[38px] h-[0.25rem] m-1
+        block content-[""] bg-dark
+        transition-all duration-500
+        translate-x-[1px] drop-shadow-md
+    }
+    .burger.active span {
+        @apply rounded-md
+    }
+    .burger.active span:first-child {
+        @apply translate-x-[-0.1rem] translate-y-[0.1rem]
+        rotate-[-38deg] transition-all duration-500 w-[1.5rem]
+    }
+    .burger.active span:last-child {
+        @apply translate-x-[-0.1rem] translate-y-[-0.1rem]
+        rotate-[38deg] transition-all duration-500 w-[1.5rem]
+    } */
+
+
+    /* .faq h1{
+        @apply text-center text-h1_clamp font-thin font-raleway
+    }
+    .faq a{
+        @apply cursor-pointer;
+    }
+    .faq__menu li{
+        @apply py-[0.35rem] text-[#737373]
+        cursor-pointer
+        transition-all duration-500;
+    }
+    .faq__menu li.active{
+        @apply text-accent underline;
+    }
+    .faq__menu_content{
+        @apply h-0 overflow-hidden
+        transition-all duration-500;
+    }
+    .faq__menu_content.active{
+        @apply h-fit
+        transition-all;
+    }
+    .faq__menu_content h2{
+        @apply text-2xl mb-10 font-semibold;
+    }
+    .khards{
+        @apply bg-gray2 relative
+        py-3 px-3 mb-4
+        transition-all;
+    }
+    .khards__header h3{
+        @apply text-base md:text-lg font-semibold;
+    }
+    .khards__header h3>span{
+        @apply hidden md:inline-block
+        mr-5 text-accent
+        font-semibold text-2xl;
+    }
+    .khards__header i{
+        @apply absolute top-2 md:top-4 right-5
+        transition-all text-xl;
+    }
+    .khards.down .khards__header i{
+        @apply -rotate-180;
+    }
+    .khards ul{
+        @apply my-0 ml-8
+        overflow-hidden h-0
+        transition-all;
+    }
+    .khards.down ul{
+        @apply my-8 h-fit;
+    }
+    .khards ul>li{
+        @apply mb-2 leading-9;
+    }
+    .khards ul>li>i{
+        @apply text-xs mr-1
+    }
+    .khards ul>li>i.fas.fa-circle{
+        @apply text-accent;
+    }
+    .khards ul>li>a{
+        @apply text-accent_alt;
+    } */
+
+    /* START OF FOOTER */
+    /* .footer__links ul{
+        @apply mx-5;
+    }
+    .footer__links ul li:first-child{
+        @apply font-semibold;
+    }
+    .footer__btn a{
+        @apply mx-auto w-full hover:bg-yellow
+    }
+    .footer__bottom div ul>li{
+        @apply mx-3;
+    } */
+
+
+
+
+
+    /* ctabg radial-gradient(circle farthest-side at center bottom, #e81a86, #6a103f 125%) */
+
+
+
+    /* cards
+    1x auto
+    3x auto
+    3x 283px
+    3x 350px
+    
+    
+    client_patners
+    normal 3 col at 1170px
+    jump to 2 col at 970px
+    jump to 1 col at 741px */
+
+    /* pixel perfect pro firefox */
+
+    .footer *{
+        @apply text-center md:text-left text-[0.7rem] text-light
+    }
+    .footer i{
+        @apply text-[1rem] w-4 h-4 text-center flex justify-center items-center
+    }
+    .footer h4{
+        @apply mb-[20px] text-base font-bold
+    }
+    .footer__socials, .footer__links, {
+        @apply px-[0.9375rem];
+    }
+    .footer__socials__links a i{
+        @apply px-[10px] py-0 text-xl
+    }
+    .footer__links{
+        @apply items-center
+        border-gray_alt lg:border-l-[1px] lg:border-r-[1px];
+    }
+    .footer__contact span{
+        @apply flex gap-2 justify-center lg:justify-start
+    }
+}
+
+@layer utilities{
+    .btn{
+        @apply inline-block
+        rounded-[1.875rem]
+        font-bold text-center
+        py-[0.8125rem] px-[1.5625rem]
+        transition-all;
+    }
+    .btn.bg--magentah{
+        @apply bg-magentah text-light
+        hover:bg-light hover:text-magentah hover:border-magentah;
+    }
+    .btn.bg--transparent-w{
+        @apply bg-transparent text-light
+        border-[1px] border-light
+        hover:bg-light hover:text-magentah;
+    }
+    .btn.bg--transparent{
+        @apply bg-transparent text-magentah
+        border-[1px] border-magentah
+        hover:bg-magentah/10 hover:text-magentah
+        hover:border-magentah/10;
+    }
+}
