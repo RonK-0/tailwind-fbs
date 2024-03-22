@@ -181,6 +181,18 @@
     /* ctabg radial-gradient(circle farthest-side at center bottom, #e81a86, #6a103f 125%) */
 
 
+    /* 
+    echo "# tailwind-fbs" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/RonK-0/tailwind-fbs.git
+    git push -u origin main */
+
+    /* git remote add origin https://github.com/RonK-0/tailwind-fbs.git
+    git branch -M main
+    git push -u origin main */
 
     /* cards
     1x auto

@@ -15,7 +15,8 @@ module.exports = {
       backgroundImage:{
         logo_blk: "url('../dist/img/logo-fbs.png')",
         logo_wht: "url('../dist/img/logo-fbs-wht.png')",
-        banner_bg: "url('../dist/img/bg3.svg')"
+        banner_bg: "url('../dist/img/bg3.svg')",
+        cta: "radial-gradient(circle farthest-side at center bottom, #e81a86, #6a103f 125%)"
       },
       colors:{
         dark: "#2b2b2b",
