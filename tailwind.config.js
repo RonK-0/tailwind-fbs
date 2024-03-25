@@ -43,20 +43,22 @@ module.exports = {
         '400%': '400% 400%'
       },
       animation: {
-        'bannerSlide': 'bannerSlide 10s ease forwards',
-        'bannerSlide_m': 'bannerSlide_m 10s ease forwards',
+        // 'bannerSlide': 'bannerSlide 15s ease forwards',
+        'bannerSlide_m': 'bannerSlide_m 15s ease forwards',
       },
       keyframes: {
-        'bannerSlide': {
-          '0%' : {'background-position': '25% 0%'},
-          '100%' : {'background-position': '40% 80%'}
-        },
+        // 'bannerSlide': {
+        //   '0%' : {'background-position': '25% 0%'},
+        //   '100%' : {'background-position': '40% 80%'}
+        // },
         'bannerSlide_m': {
           '0%' : {'background-position': '20% 50%'},
           '100%' : {'background-position': '50% 80%'}
-        }
+        },
       },
-
+      boxShadow:{
+        'card_shadow': '0px 0px 8px #b1b1b1'
+      },
     },
   },
   plugins: [],

@@ -161,25 +161,6 @@
         @apply text-accent_alt;
     } */
 
-    /* START OF FOOTER */
-    /* .footer__links ul{
-        @apply mx-5;
-    }
-    .footer__links ul li:first-child{
-        @apply font-semibold;
-    }
-    .footer__btn a{
-        @apply mx-auto w-full hover:bg-yellow
-    }
-    .footer__bottom div ul>li{
-        @apply mx-3;
-    } */
-
-
-
-
-
-    /* ctabg radial-gradient(circle farthest-side at center bottom, #e81a86, #6a103f 125%) */
 
 
     /* 
@@ -195,29 +176,47 @@
     git branch -M main
     git push -u origin main */
 
-    /* cards
-    1x auto
-    3x auto
-    3x 283px
-    3x 350px
-    
-    
-    client_patners
-    normal 3 col at 1170px
-    jump to 2 col at 970px
-    jump to 1 col at 741px */
+
+    /* temp solution to make animation work on both desktop and mobile */
+    @media (min-width: 768px) {
+        keyframes bannerSlide {
+            0% { background-position: 25% 0%}
+            100% { background-position: 40% 80% }
+          }
+      
+        .homeBanner {
+          animation: bannerSlide 15s ease forwards;
+        }
+    }
 
     .homeBanner{
         @apply bg-banner_bg bg-lgray
-        bg-400% animate-bannerSlide_m md:animate-bannerSlide
+        bg-400% animate-bannerSlide_m
+        /* md:animate-bannerSlide */
     }
+    
+
+
+    .offer__entry{
+        @apply w-full lg:w-[92%] mx-auto mb-[60px]
+    }
+    .offer__entry__label i{
+        @apply text-[50px] mb-2
+    }
+    .offer__entry__label h3{
+        @apply text-xl h-[76px]
+    }
+    .offer__entry__details li{
+        @apply leading-[2]
+    }
+
 
     .activities .container{
         @apply sm:max-w-[95%]
     }
     .activities__card{
         @apply flex flex-col items-center w-full
-        md:max-w-[350px] relative ring-1 ring-gray-300 shadow-2xl
+        md:max-w-[350px] relative shadow-card_shadow
     }
     .activities__card__img{
         @apply overflow-hidden w-full h-[200px]
@@ -241,39 +240,46 @@
         hover:translate-y-[0.75px]
     }
 
-    
-    .offer__entry{
-        @apply w-full lg:w-[92%] mx-auto mb-[60px]
-    }
-    .offer__entry__label i{
-        @apply text-[50px] mb-2
-    }
-    .offer__entry__label h3{
-        @apply text-xl h-[76px]
-    }
-    .offer__entry__details li{
-        @apply leading-[2]
-    }
 
-    .cTestimonial__entry{
-        @apply  grid lg:grid-cols-2 items-center
+    .cTestimonial__entries .cTestimonial__entry{
+        @apply pb-4 overflow-hidden
+    }
+    .cTestimonial__entry .cTestimonial__entry__content{
+        @apply grid lg:grid-cols-2 items-center py-4 gap-8 lg:gap-0 w-full
     }
     .cTestimonial__entry__person img{
         @apply max-w-[320px] max-h-[320px] mx-auto
     }
-    p.cTestimonial__entry__quote{
-        @apply font-extrabold text-center leading-[30px]
-        w-full lg:max-w-[364.5px] xl:max-w-[464.5px]
-        relative
+    .cTestimonial__entry__quote{
+        @apply relative flex flex-col justify-center overflow-visible
+        w-full lg:max-w-[364.5px] xl:max-w-[464.25px] mx-auto
     }
-    p.cTestimonial__entry__quote i{
-        @apply text-[108px] text-gray-200
+    .cTestimonial__entry__quote p{
+        @apply font-extrabold text-center leading-[30px] z-10
     }
-    p.cTestimonial__entry__quote i:first{
-        @apply absolute top-[-70px] left-[-50px]
+    .cTestimonial__entry__quote i{
+        @apply text-[72px] md:text-[108px] text-[#bbbbbb] opacity-50 scale-y-110
     }
-    p.cTestimonial__entry__quote i:last{
-        @apply absolute bottom-[-70px] right-[-50px]
+    .cTestimonial__entry__quote i.fa-quote-left{
+        @apply absolute top-[-40px] md:top-[-50px] lg:top-[-70px] left-0 lg:left-[-40px]
+    }
+    .cTestimonial__entry__quote i.fa-quote-right{
+        @apply absolute bottom-[-40px] md:bottom-[-50px] lg:bottom-[-70px] right-0 lg:right-[-40px]
+    }
+    .cTestimonial__wrapper .tns-outer{
+        @apply relative
+    }
+    .cTestimonial__wrapper .tns-outer .tns-nav{
+        @apply absolute bottom-0 z-20 w-full
+        flex gap-[10px] justify-center flex-wrap
+    }
+    .cTestimonial__wrapper .tns-outer .tns-nav button{
+        @apply bg-magentah w-[15px] h-[15px]
+        transition-all
+        cursor-pointer rounded-full
+    }
+    .cTestimonial__wrapper  .tns-outer button.tns-nav-active{
+        @apply bg-[#be2a76]
     }
 
 

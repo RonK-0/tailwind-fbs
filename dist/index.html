@@ -22,6 +22,10 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- TINY SLIDER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+
 </head>
 <body id="top">
     <!-- <header class="header" id="header">
@@ -37,11 +41,7 @@
                         <li><a href="https://fca.edu.ph/faq" class="btn bg-white hover:bg-accent_alt hover:text-white outline-1  text-black border-black border">FAQ's</a></li>
                     </ul>
                 </div>
-                <div class="burger inline-block lg:hidden">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <div class="burger inline-block lg:hidden"><span></span><span></span><span></span></div>
             </div>
             <nav class="nav">
                 <ul class="flex flex-col justify-center lg:grid lg:grid-cols-7 lg:justify-between w-full uppercase text-center">
@@ -63,7 +63,6 @@
                     </ul>
                 </div>
             </nav>
-            
         </div>
     </header> -->
 
@@ -76,7 +75,7 @@
                     <p class="mb-5">Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.</p>
                     <div><button class="btn bg--magentah font-semibold">OUR SERVICES</button></div>
                 </div>
-                <div class="homeBanner__img" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1250" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/home/fbs-banner-bg.png" alt=""></div>
+                <div class="homeBanner__img" data-aos="fade-up" data-aos-duration="500" data-aos-delay="750" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/home/fbs-banner-bg.png" alt=""></div>
             </div>
         </div>
         <!-- section.homeBanner>.container>.homeBanner__wrapper.grid.lg:grid-cols-2>(.homeBanner__text.flex.flex-col.text-left>h1.text-3xl{Excellence in <span class="font-extrabold">Managed Services</span> and <span class="font-extrabold">Web Solutions</span>}+p{Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.})+(.homeBanner__img>img[src="./img/home/fbs-banner-bg.png"]) -->
@@ -97,6 +96,7 @@
         <!-- section.info.bg-light>.container>.info__wrapper>(.info__title.mb-5>h2.font-bold.text-3xl{Who We Are}+h2.text-3xl{What We Do?})+p{ Frontline Business Solutions, Inc. is an Information Technology and Accounting business solutions company that offers a variety of services to SME’s. Our commitment is to leverage business success for the good of people and the communities in which we exist. Our vision and mission is a successful business that maintains harmony between the three goals of excellent products and services, revenue generation, and positive social impact. By choosing Frontline Business Solutions, Inc. you are partnering with a company committed to caring about people and community development.}+button.btn.bg--accent{Watch Video} -->
     </section>
    
+
     <seciton id="services" class="offer bg-offer_bg bg-cover bg-center bg-no-repeat block py-[10vh] lg:py-[15vh]">
         <div class="container text-light">
             <h2 class="text-center text-3xl mb-[60px]">What <span class="font-extrabold">We Offer</span>?</h2>
@@ -158,109 +158,137 @@
          <!-- seciton.offer>.container>h2.text-center.text-3xl{What <span class="font-bold">We Offer</span>?}+.offer__wrapper>(.offer__entry*4>(.offer__entry__label>i.fas.fa-code.text-4xl+h3{Web Solutions})+(ul.offer__entry__details>li*7{TEXT})) -->
     </seciton>
    
-    <!-- section.cTestimonial>.container>.cTestimonial__wrapper>h2.text-3xl{Hear what our <span class="font-extrabold">clients say.</span>}+(.cTestimonial__entry.grid.md:grid-cols-2.items-center*7>(.cTestimonial__entry__person.text-center>img.rounded-full[src="./img/home/clients/jamesDavidson-e1685672789528.jpg"]+h4.font-bold.text-xl{James Davidson}+p{Managing Director & President}+h5.text-sm.font-semibold{Avant Advisory Group})+(p.cTestimonial__entry__quote.text-sm.font-extrabold{TEXT})) -->
-    <section class="cTestimonial py-[10vh]">
+
+    <section class="cTestimonial py-[10vh] bg-lgray">
         <div class="container">
             <div class="cTestimonial__wrapper">
-                <h2 class="text-3xl text-center">Hear what our <span class="font-extrabold">clients say.</span></h2>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">James Davidson</h4>
-                        <p class="mb-5">Managing Director & President</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                <h2 class="text-3xl font-semibold text-center mb-[60px]">Hear what our <span class="font-extrabold">clients say.</span></h2>
+                <div class="cTestimonial__entries">
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">James Davidson</h4>
+                                <p class="mb-5">Managing Director & President</p>
+                                <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-sm">
+                                    “Frontline Business Solutions” is beyond an exceptional firm. Professional courtesy, responsiveness, competence, and client service are only a few of the many high level qualities that Frontline’s team exhibit.  Frontline exemplifies the golden rule by treating its clients as it would like to be treated. Every Frontline team member  with whom Avant Advisory Group has dealt has been a true blessing.Finally, based on Avant Advisory Group’s several years of working with Frontline personnel, and especially Mike DeJesus, I can say that they work heartily for their clients as if they are working for the Lord. (Colossians 3:23-24) Thank you for what you do, Frontline!”
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote text-sm">
-                        <i class="fas fa-quote-left"></i><br>
-                        “Frontline Business Solutions” is beyond an exceptional firm. Professional courtesy, responsiveness, competence, and client service are only a few of the many high level qualities that Frontline’s team exhibit.  Frontline exemplifies the golden rule by treating its clients as it would like to be treated. Every Frontline team member  with whom Avant Advisory Group has dealt has been a true blessing.Finally, based on Avant Advisory Group’s several years of working with Frontline personnel, and especially Mike DeJesus, I can say that they work heartily for their clients as if they are working for the Lord. (Colossians 3:23-24) Thank you for what you do, Frontline!”
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                </div>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">Robert Han</h4>
-                        <p class="mb-5">COO/Partner</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/1647905169469.jpg" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">Robert Han</h4>
+                                <p class="mb-5">COO/Partner</p>
+                                <h5 class="text-sm font-semibold">Twomiles</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-xl">
+                                    “FBS is a true partner to our firm.  They have help form our vision and trajectory.  We are immensely grateful our partnership.  Our expectation is to FBS to grow with us.  They are an important part of our success.  And beyond the business perspective, they are fantastic people.  We are blessed to work with them.”
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote">
-                        <i class="fas fa-quote-left"></i>
-                        “FBS is a true partner to our firm.  They have help form our vision and trajectory.  We are immensely grateful our partnership.  Our expectation is to FBS to grow with us.  They are an important part of our success.  And beyond the business perspective, they are fantastic people.  We are blessed to work with them.”
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                </div>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">James Davidson</h4>
-                        <p class="mb-5">Managing Director & President</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/james_sunderland.png" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">James Sunderland</h4>
+                                <p class="mb-5">VP Creative</p>
+                                <h5 class="text-sm font-semibold">Over The Top Marketing</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-xl">
+                                    “The team at Frontline is incredible. They genuinely care about our needs and share in our vision of success. We are proud to call them a business partner and appreciate all the hard work they do for us.”
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote">
-                        <i class="fas fa-quote-left"></i>
-                        TEXT
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                </div>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">James Davidson</h4>
-                        <p class="mb-5">Managing Director & President</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/tim-salmonson.png" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">Tim Salmonson</h4>
+                                <p class="mb-5">Social Economist</p>
+                                <h5 class="text-sm font-semibold">Social Economic Enterprises</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-xl">
+                                    "There is no better business model."
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote">
-                        <i class="fas fa-quote-left"></i>
-                        TEXT
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                </div>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">James Davidson</h4>
-                        <p class="mb-5">Managing Director & President</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/jeffrey-seitz.png" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">Jeffrey Seitz</h4>
+                                <p class="mb-5">Chief Executive Officer</p>
+                                <h5 class="text-sm font-semibold">Phix Genomics</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-xl">
+                                    "I have worked with a number of different website developers, but none have been as responsive or as quick to turn the work around."
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote">
-                        <i class="fas fa-quote-left"></i>
-                        TEXT
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                </div>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">James Davidson</h4>
-                        <p class="mb-5">Managing Director & President</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/testi-doodz.png" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">Rhoda Lynn Pessina Dayo</h4>
+                                <p class="mb-5">School Directress</p>
+                                <h5 class="text-sm font-semibold">Frontline Christian Academy</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote xl:max-w-[480px]">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-xl">
+                                    "We enjoyed working together and meeting with the Frontline Business Solutions Staff when they built the website of Frontline Christian Academy."
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote">
-                        <i class="fas fa-quote-left"></i>
-                        TEXT
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                </div>
-                <div class="cTestimonial__entry">
-                    <div class="cTestimonial__entry__person text-center">
-                        <img loading="lazy" src="./img/home/clients/jamesDavidson-e1685672789528.jpg" alt="" class="rounded-full mb-2">
-                        <h4 class="font-semibold text-xl">James Davidson</h4>
-                        <p class="mb-5">Managing Director & President</p>
-                        <h5 class="text-sm font-semibold">Avant Advisory Group</h5>
+                    <div class="cTestimonial__entry">
+                        <div class="cTestimonial__entry__content">
+                            <div class="cTestimonial__entry__person text-center">
+                                <img loading="lazy" src="./img/home/clients/ralph-raymund-pinon.png" alt="" class="rounded-full mb-2">
+                                <h4 class="font-semibold text-xl">Raymund Pinon</h4>
+                                <p class="mb-5">VP Sales and Marketing</p>
+                                <h5 class="text-sm font-semibold">Phix Genomics Philippines</h5>
+                            </div>
+                            <div class="cTestimonial__entry__quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="text-xl">
+                                    "Yes, we are pleased to have chosen Frontline Business Solutions as our partner in developing the PHIX Genomics website because you are able to deliver on your promises."
+                                </p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="cTestimonial__entry__quote">
-                        <i class="fas fa-quote-left"></i>
-                        TEXT
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                    
                     
                 </div>
             </div>
         </div>
+        <!-- section.cTestimonial>.container>.cTestimonial__wrapper>h2.text-3xl{Hear what our <span class="font-extrabold">clients say.</span>}+(.cTestimonial__entry.grid.md:grid-cols-2.items-center*7>(.cTestimonial__entry__person.text-center>img.rounded-full[src="./img/home/clients/jamesDavidson-e1685672789528.jpg"]+h4.font-bold.text-xl{James Davidson}+p{Managing Director & President}+h5.text-sm.font-semibold{Avant Advisory Group})+(p.cTestimonial__entry__quote.text-sm.font-extrabold{TEXT})) -->
     </section>
-    
-    
 
 
     <section id="news-events" class="activities py-[10vh] bg-light">
@@ -299,7 +327,6 @@
         </div>
         <!-- section.activities>.container>(h2.mb-16{<span class="font-extrabold">Events</span> and <span class="font-extrabold">Activities</span>})+.activities__wrapper.grid.md:grid-cols-3.gap-6.mb-16>(.activities__card*3>img+(.activities__card__details.shadow-xl>h3{FBS 5th Aniversary}+p.mb-5{Our 5th-year celebration at Frontline Business Solutions is a special time to look back on…}+button.btn.bg--magentah{Read More}))+button.btn.bg--transparent{VIEW ALL} -->
     </section>
-
 
 
     <!-- MOVE TO ABOUT -->
@@ -351,5 +378,17 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+        var testimonialSlider = tns({
+            container: ".cTestimonial__entries",
+            item: 1,
+            nav: true,
+            autoplay: false, 
+            controls: false, 
+            autoplayButtonOutput: false, 
+            mouseDrag: true
+        });
+    </script>
 </body>
 </html>
