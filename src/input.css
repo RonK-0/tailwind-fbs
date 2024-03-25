@@ -42,6 +42,7 @@
     .nav ul.nav_menu{
         @apply w-full flex flex-col lg:flex-row
         justify-center items-center
+        transition-all duration-500
     }
     .nav ul.nav_menu>li{
         @apply w-full lg:w-fit lg:px-[20px]
@@ -56,14 +57,15 @@
         @apply border-b-[1px]
     }
     .nav ul.nav_menu>li:nth-child(3){
-        @apply relative h-fit lg:h-[75px]
+        @apply relative h-fit lg:h-[75px] transition-all duration-500
     }
     .nav ul.nav_menu>li>ul.submenu{
         @apply relative lg:absolute left-0 lg:top-[70px] bg-[#480f2d] lg:bg-light lg:text-magentah
         text-center w-full lg:w-[230%] hidden
+        transition-all duration-500
     }
     .nav ul.nav_menu>li:hover ul.submenu{
-        @apply block lg:px-[11px] lg:py-[6px]
+        @apply block lg:px-[11px] lg:py-[6px] transition-all duration-500
     }
     /* .nav ul.nav_menu>li:hover ul.nav_menu>li:nth-child(4){
         @apply pt-[144px]

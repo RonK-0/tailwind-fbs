@@ -649,6 +649,9 @@ body.open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 992px) {
@@ -709,6 +712,9 @@ body.open {
   position: relative;
   height: -moz-fit-content;
   height: fit-content;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 992px) {
@@ -725,6 +731,9 @@ body.open {
   --tw-bg-opacity: 1;
   background-color: rgb(72 15 45 / var(--tw-bg-opacity));
   text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 992px) {
@@ -741,6 +750,9 @@ body.open {
 
 .nav ul.nav_menu>li:hover ul.submenu {
   display: block;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 992px) {
