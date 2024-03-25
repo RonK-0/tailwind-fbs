@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design | SEO | Web Hosting | Accounting | Laguna, San Pablo City</title>
+    <link href="../src/output.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/fbs_favicon.ico">
+
+    <!-- MONTSERRAT FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="preload" href="./fonts/montserrat-regular-webfont.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-extrabold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/1e4daca392.js" crossorigin="anonymous"></script> -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- TINY SLIDER -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" /> -->
+
+</head>
+<body id="top">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper flex items-center justify-between mx-auto h-[75px] lg:mx-[-2px]">
+                <a href="https://frontlinebusiness.com.ph" ><img loading="lazy" src="./img/logo-fbs.png" alt="FBS LOGO" class=""></a>
+                <nav class="nav">
+                    <ul class="nav_menu">
+                        <!-- li*7>a{HOME} -->
+                        <li id="menu-item"><a href="#top">HOME</a></li>
+                        <li id="menu-item"><a href="./about.html">ABOUT</a></li>
+                        <li id="menu-item">
+                            <a href="#services">SERVICES</a>
+                            <ul class="submenu">
+                                <li><a href="#">WEB SOLUTIONS</a></li>
+                                <li><a href="#">VIRTUAL ASSISTANT SOLUTIONS</a></li>
+                                <li><a href="#">ACCOUNTING SOLUTIONS</a></li>
+                                <li><a href="#">LEARNING CENTER SOLUTIONS</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item"><a href="#">CAREER</a></li>
+                        <li id="menu-item"><a href="#">ACTIVITIES</a></li>
+                        <li id="menu-item"><a href="#">CONTACT</a></li>
+                        <li id="menu-item"><a href="#">PAYMENT</a></li>
+                    </ul>
+                </nav>
+                <div class="burger"><span></span><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="h-[75px] lg:hidden"></section> <!-- SPACER FOR NAV FIXED ON MOBILE -->
+    
+    <section class="homeBanner py-[5vh] flex items-center justify-center">
+        <div class="container">
+            <div class="homeBanner__wrapper flex flex-col lg:flex-row lg:justify-between items-center gap-4">
+                <div class="homeBanner__text flex flex-col text-left w-[92%] lg:w-full lg:max-w-[540px] mx-auto lg:mx-0 justify-center lg:justify-start" data-aos="fade-up" data-aos-duration="500">
+                    <h1 class="text-3xl mb-5 leading-[1.3]">Excellence in <span class="font-extrabold">Managed Services</span> and <span class="font-extrabold">Web Solutions</span></h1>
+                    <p class="mb-5">Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.</p>
+                    <div><button class="btn bg--magentah font-semibold">OUR SERVICES</button></div>
+                </div>
+                <div class="homeBanner__img" data-aos="fade-up" data-aos-duration="500" data-aos-delay="750" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/home/fbs-banner-bg.png" alt=""></div>
+            </div>
+        </div>
+        <!-- section.homeBanner>.container>.homeBanner__wrapper.grid.lg:grid-cols-2>(.homeBanner__text.flex.flex-col.text-left>h1.text-3xl{Excellence in <span class="font-extrabold">Managed Services</span> and <span class="font-extrabold">Web Solutions</span>}+p{Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.})+(.homeBanner__img>img[src="./img/home/fbs-banner-bg.png"]) -->
+    </section>
+
+    
+    <section class="cta bg-cta py-[94px] text-light text-center">
+        <div class="container">
+            <div class="cta__wrapper flex flex-col items-center">
+                <h2 class="text-light text-3xl mb-5">There are more things that you should focus on. Let us handle your IT work.</h2>
+                <button class="btn bg--transparent-w">CONTACT US</button>
+            </div>
+        </div>
+        <!-- section.cta.bg-cta>.container>.cta__wrapper>h2{There are more things that you should focus on. Let us handle your IT work.} -->
+    </section>
+
+
+    <footer class="footer bg-magentah py-[5vh] relative">
+        <div class="container">
+            <div class="footer__wrapper relative grid grid-cols-1 md:grid-cols-3 justify-center gap-[40px] md:gap-0 mb-[40px]">
+                <div class="footer__socials flex flex-col justify-center lg:justify-start items-center">
+                    <div class="footer__socials__logo flex flex-col items-center mb-6">
+                        <img loading="lazy" src="./img/logo-fbs-wht.png" alt="" class="w-[200px]">
+                        <p>Copyright &copy; 2024</p>
+                    </div>
+                    <div class="footer__socials__links flex justify-center md:justify-start items-center md:items-start gap-[25px]">
+                        <a href="https://www.facebook.com/frontline.business/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/frontlinebus"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UClQaH07ouCd0sgYmXUEu0xQ"><i class="fa-brands fa-square-youtube"></i></a>
+                        <a href="https://www.yelp.com/biz/frontline-business-solutions-san-pablo-city-3"><i class="fa-brands fa-yelp"></i></a>
+                        <a href="https://www.linkedin.com/company/frontline-business-solutions-inc/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links flex flex-col items-center relative">
+                    <h4>SERVICES WE OFFER</h4>
+                    <span>Web Solutions</span>
+                    <span>Virtual Assistant Solutions</span>
+                    <span>Accounting Solutions</span>
+                    <span>Learning Center Solutions</span>
+                </div>
+                <div class="footer__contact flex flex-col relative lg:pl-[12px]">
+                    <h4>CONTACT DETAILS</h4>
+                    <span><i class="fa-solid fa-phone"></i> 049 501 3592</span>
+                    <span><i class="fa-solid fa-mobile-screen-button"></i> 0927 168 6810</span>
+                    <span><i class="fa-solid fa-clock"></i> Monday - Friday | 7:00am - 4:30pm</span>
+                    <span><i class="fa-solid fa-envelope"></i> info@frontlinebusiness.com.ph</span>
+                    <span><i class="fa-solid fa-house"></i> Baloc road, Brgy. San Ignacio, San Pablo City, Laguna, 4000</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+        var testimonialSlider = tns({
+            container: ".cTestimonial__entries",
+            item: 1,
+            nav: true,
+            autoplay: false, 
+            controls: false, 
+            autoplayButtonOutput: false, 
+            mouseDrag: true
+        });
+    </script> -->
+</body>
+</html>

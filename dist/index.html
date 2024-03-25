@@ -36,7 +36,7 @@
                     <ul class="nav_menu">
                         <!-- li*7>a{HOME} -->
                         <li id="menu-item"><a href="#top">HOME</a></li>
-                        <li id="menu-item"><a href="#">ABOUT</a></li>
+                        <li id="menu-item"><a href="./about.html">ABOUT</a></li>
                         <li id="menu-item">
                             <a href="#services">SERVICES</a>
                             <ul class="submenu">
@@ -57,8 +57,9 @@
         </div>
     </header>
 
+    <section class="h-[75px] lg:hidden"></section> <!-- SPACER FOR NAV FIXED ON MOBILE -->
     
-    <section class="homeBanner py-[5vh] sm:py-[10vh] flex items-center justify-center pt-[12.5vh] sm:pt-[10vh]">
+    <section class="homeBanner py-[5vh] flex items-center justify-center">
         <div class="container">
             <div class="homeBanner__wrapper flex flex-col lg:flex-row lg:justify-between items-center gap-4">
                 <div class="homeBanner__text flex flex-col text-left w-[92%] lg:w-full lg:max-w-[540px] mx-auto lg:mx-0 justify-center lg:justify-start" data-aos="fade-up" data-aos-duration="500">
@@ -319,19 +320,7 @@
         <!-- section.activities>.container>(h2.mb-16{<span class="font-extrabold">Events</span> and <span class="font-extrabold">Activities</span>})+.activities__wrapper.grid.md:grid-cols-3.gap-6.mb-16>(.activities__card*3>img+(.activities__card__details.shadow-xl>h3{FBS 5th Aniversary}+p.mb-5{Our 5th-year celebration at Frontline Business Solutions is a special time to look back on…}+button.btn.bg--magentah{Read More}))+button.btn.bg--transparent{VIEW ALL} -->
     </section>
 
-
-    <!-- MOVE TO ABOUT -->
-    <section class="cta bg-cta py-[94px] text-light text-center">
-        <div class="container">
-            <div class="cta__wrapper flex flex-col items-center">
-                <h2 class="text-light text-3xl mb-5">There are more things that you should focus on. Let us handle your IT work.</h2>
-                <button class="btn bg--transparent-w">CONTACT US</button>
-            </div>
-        </div>
-        <!-- section.cta.bg-cta>.container>.cta__wrapper>h2{There are more things that you should focus on. Let us handle your IT work.} -->
-    </section>
-
-
+    
     <footer class="footer bg-magentah py-[5vh] relative">
         <!-- .container>.footer__wrapper.grid.grid-cols-1.md:grid-cols-3>.footer__socials+.footer__links+.footer__contact -->
         <div class="container">
