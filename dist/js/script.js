@@ -5,14 +5,14 @@ AOS.init({
 
 
 
-// const burg = document.querySelector(".burger");
+const burg = document.querySelector(".burger");
 // const nav = document.querySelector("nav");
 // const bodih = document.querySelector("body");
-// burg.addEventListener("click", ()=>{
-//     burg.classList.toggle("active");
-//     nav.classList.toggle("open");
-//     bodih.classList.toggle("open");
-// });
+burg.addEventListener("click", ()=>{
+    burg.classList.toggle("active");
+    // nav.classList.toggle("open");
+    // bodih.classList.toggle("open");
+});
 
 
 // const khards = document.querySelectorAll(".khards");
