@@ -23,9 +23,8 @@
 
     /* START OF HEADER */
     .header{
-        @apply fixed top-0
-        lg:static z-50
-        w-full bg-light
+        @apply fixed top-0 z-50
+        lg:static w-full bg-light
     }
     .nav{
         @apply bg-light
@@ -45,7 +44,7 @@
         transition-all duration-500
     }
     .nav ul.nav_menu>li{
-        @apply w-full lg:w-fit lg:px-[20px]
+        @apply w-full lg:w-fit lg:px-[16.85px] lg:relative
         h-[60px] lg:h-[75px] leading-[60px] lg:leading-[75px]
         text-center text-sm text-magentah bg-light
         border-t-[1px] border-gray_alt/50 lg:border-none
@@ -60,29 +59,35 @@
         @apply relative h-fit lg:h-[75px] transition-all duration-500
     }
     .nav ul.nav_menu>li>ul.submenu{
-        @apply relative lg:absolute left-0 lg:top-[70px] bg-[#480f2d] lg:bg-light lg:text-magentah
+        @apply relative lg:absolute left-0 lg:top-[78px] bg-[#480f2d] lg:bg-light lg:text-magentah
         text-center w-full lg:w-[230%] hidden
-        transition-all duration-500
+        lg:transition-all duration-500
     }
-    .nav ul.nav_menu>li:hover ul.submenu{
-        @apply block lg:px-[11px] lg:py-[6px] transition-all duration-500
+    .nav ul.nav_menu>li:nth-child(3):hover ul.submenu{
+        @apply block lg:px-[11px] lg:py-[10px] 
     }
-    /* .nav ul.nav_menu>li:hover ul.nav_menu>li:nth-child(4){
-        @apply pt-[144px]
-    } */
     .nav ul.submenu>li{
         @apply h-[36px] w-full border-none 
         flex items-center justify-center lg:justify-start
         text-center lg:text-left
+        lg:relative
     }
-
- 
-    
-      header nav ul li:hover ul.dropdown-menu  {
-        display: block!important;
-        z-index: 2;
-      }
-
+    .nav ul.nav_menu>li::after{
+        @apply lg:absolute lg:bottom-[10px] lg:left-1/2
+        lg:content-[''] lg:bg-magentah
+        lg:w-0 lg:h-[5px]
+        lg:transition-all lg:duration-500
+    }
+    .nav ul.submenu>li::after{
+        @apply lg:absolute lg:bottom-[4px] lg:left-1/2
+        lg:content-[''] lg:bg-magentah
+        lg:w-0 lg:h-[2px]
+        lg:transition-all lg:duration-500
+    }
+    .nav ul.nav_menu>li:hover::after, .nav ul.submenu>li:hover::after{
+        @apply lg:w-full lg:left-0
+        lg:transition-all lg:duration-200
+    }
     /* .burger */
     .burger {
         @apply w-[40px] h-[40px] cursor-pointer
@@ -92,7 +97,7 @@
     .burger span {
         @apply w-[40px] h-[8px] rounded-lg
         block content-[""] bg-magentah
-        absolute top-0 left-0
+        absolute top-0 right-0
         transition-all duration-[0.25s] ease-in-out
     }
     .burger span:nth-child(1){
@@ -105,7 +110,7 @@
         @apply top-[30px]
     }
     .burger.active span:nth-child(1) {
-        @apply top-[18px] w-0 left-1/2
+        @apply top-[18px] w-0 right-1/2
     }
     .burger.active span:nth-child(2) {
         @apply rotate-45
@@ -114,7 +119,7 @@
         @apply -rotate-45
     }
     .burger.active span:nth-child(4) {
-        @apply top-[18px] w-0 left-1/2
+        @apply top-[18px] w-0 right-1/2
     }
 
 
