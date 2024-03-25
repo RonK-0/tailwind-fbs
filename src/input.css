@@ -17,56 +17,69 @@
   }
 
 @layer components{
-    /* body.open{  
+    body.open{  
         @apply overflow-hidden;
-    } */
+    }
 
     /* START OF HEADER */
-    /* .header{
+    .header{
         @apply fixed top-0
         lg:static z-50
-        w-full bg-white
-    }
-
-    .header__contact_d ul>li{
-        @apply mx-2;
-    }
-    .header__wrapper ul>li>i{
-        @apply mr-1
+        w-full bg-light
     }
     .nav{
         @apply bg-light
-        w-full h-screen px-0 pt-0 
-        absolute top-[95px] left-[100%] z-[99] 
-        flex  flex-col items-center
-        lg:static lg:h-fit lg:w-full
-        my-5 lg:my-2
+        w-full h-screen p-0 z-[99]
+        absolute top-[75px] right-[100%]
+        lg:static lg:h-fit lg:w-fit
         transition-all duration-300 ease-in-out;
     }
     .nav.open{
-        @apply 
-        top-[95px] left-0
-        flex flex-col
+        @apply flex flex-col
+        top-[75px] right-0
         transition-all duration-300;
     }
-    .nav a{
-        @apply block text-center;
+    .nav ul.nav_menu{
+        @apply w-full flex flex-col lg:flex-row
+        justify-center items-center
     }
-    .nav ul>li{
-        @apply my-3 border-l-2 border-l-gray-300;
+    .nav ul.nav_menu>li{
+        @apply w-full lg:w-fit lg:px-[20px]
+        h-[60px] lg:h-[75px] leading-[60px] lg:leading-[75px]
+        text-center text-sm text-magentah bg-light
+        border-t-[1px] border-gray_alt/50 lg:border-none
+        transition-all duration-500
+        hover:bg-magentah hover:text-light 
+        lg:hover:bg-light lg:hover:text-magentah
     }
-    .nav ul>li>a{
-        @apply p-2
+    .nav ul.nav_menu>li:last-of-type{
+        @apply border-b-[1px]
     }
-    .nav ul>li:first-child {
-        @apply border-none
+    .nav ul.nav_menu>li:nth-child(3){
+        @apply relative h-fit lg:h-[75px]
     }
-    .nav a.btn{
-        @apply px-8;
+    .nav ul.nav_menu>li>ul.submenu{
+        @apply relative lg:absolute left-0 lg:top-[70px] bg-[#480f2d] lg:bg-light lg:text-magentah
+        text-center w-full lg:w-[230%] hidden
     }
-    .nav ul li:last-child a {
-        @apply w-[113px] mx-auto
+    .nav ul.nav_menu>li:hover ul.submenu{
+        @apply block lg:px-[11px] lg:py-[6px]
+    }
+    /* .nav ul.nav_menu>li:hover ul.nav_menu>li:nth-child(4){
+        @apply pt-[144px]
     } */
+    .nav ul.submenu>li{
+        @apply h-[36px] w-full border-none 
+        flex items-center justify-center lg:justify-start
+        text-center lg:text-left
+    }
+
+ 
+    
+      header nav ul li:hover ul.dropdown-menu  {
+        display: block!important;
+        z-index: 2;
+      }
 
     /* .burger */
     .burger {

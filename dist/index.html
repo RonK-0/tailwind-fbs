@@ -32,42 +32,34 @@
         <div class="container">
             <div class="header__wrapper flex items-center justify-between mx-auto h-[75px]">
                 <a href="https://frontlinebusiness.com.ph" ><img loading="lazy" src="./img/logo-fbs.png" alt="FBS LOGO" class=""></a>
-                <nav class="header__nav">
-                    <ul class="flex flex-col lg:flex-row justify-center items-center ">
-                        <li><i class="fas fa-phone"></i>(049) 521-0732 </li>
-                        <li><i class="fas fa-mobile-retro"></i>(+63) 908-202-0749 | (+63) 926-363-9722</li>
-                        <li><a href="https://www.facebook.com/frontlinechristianacademy" class="btn bg-facebook hover:bg-facebook_hover border text-white">Facebook</a>
+                <nav class="nav">
+                    <ul class="nav_menu">
+                        <!-- li*7>a{HOME} -->
+                        <li id="menu-item"><a href="#top">HOME</a></li>
+                        <li id="menu-item"><a href="#">ABOUT</a></li>
+                        <li id="menu-item">
+                            <a href="#services">SERVICES</a>
+                            <ul class="submenu">
+                                <li><a href="#">WEB SOLUTIONS</a></li>
+                                <li><a href="#">VIRTUAL ASSISTANT SOLUTIONS</a></li>
+                                <li><a href="#">ACCOUNTING SOLUTIONS</a></li>
+                                <li><a href="#">LEARNING CENTER SOLUTIONS</a></li>
+                            </ul>
                         </li>
-                        <li><a href="https://fca.edu.ph/faq" class="btn bg-white hover:bg-accent_alt hover:text-white outline-1  text-black border-black border">FAQ's</a></li>
+                        <li id="menu-item"><a href="#">CAREER</a></li>
+                        <li id="menu-item"><a href="#">ACTIVITIES</a></li>
+                        <li id="menu-item"><a href="#">CONTACT</a></li>
+                        <li id="menu-item"><a href="#">PAYMENT</a></li>
+
                     </ul>
                 </nav>
                 <div class="burger"><span></span><span></span><span></span><span></span></div>
             </div>
-            <!-- <nav class="nav">
-                <ul class="flex flex-col justify-center lg:grid lg:grid-cols-7 lg:justify-between w-full uppercase text-center">
-                    <li><a href="https://fca.edu.ph/">Home</a></li>
-                    <li><a href="https://fca.edu.ph/about/">About</a></li>
-                    <li><a href="https://fca.edu.ph/admission/">Admission</a></li>
-                    <li><a href="https://fca.edu.ph/services/">Services</a></li>
-                    <li><a href="https://fca.edu.ph/gallery/">Gallery</a></li>
-                    <li><a href="https://fca.edu.ph/contact/">Contact</a></li>
-                    <li><a href="https://fca.edu.ph/donate/" class="btn bg-yellow text-white">Give</a></li>
-                </ul>
-                <div class="header__contact_m lg:hidden ">
-                    <ul class="block items-center text-center">
-                        <li><i class="fa-solid fa-phone"></i>(049) 521-0732 </li>
-                        <li><i class="fa-solid fa-mobile-retro"></i>(+63) 908-202-0749 | (+63) 926-363-9722</li>
-                        <li><a href="https://www.facebook.com/frontlinechristianacademy" class="btn mx-auto bg-facebook hover:facebook-alt border text-white">Facebook</a>
-                        </li>
-                        <li><a href="https://fca.edu.ph/faq" class="btn mx-auto bg-yellow lg:bg-white hover:bg-accent_alt hover:text-white outline-1 text-light lg:text-black border-black border">FAQ's</a></li>
-                    </ul>
-                </div>
-            </nav> -->
         </div>
     </header>
 
     
-    <section class="homeBanner py-[5vh] sm:py-[10vh] flex items-center justify-center">
+    <section class="homeBanner py-[5vh] sm:py-[10vh] flex items-center justify-center pt-[12.5vh] sm:pt-[10vh]">
         <div class="container">
             <div class="homeBanner__wrapper flex flex-col lg:flex-row lg:justify-between items-center gap-4">
                 <div class="homeBanner__text flex flex-col text-left w-[92%] lg:w-full lg:max-w-[540px] mx-auto" data-aos="fade-up" data-aos-duration="500">
