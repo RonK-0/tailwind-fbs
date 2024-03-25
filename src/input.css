@@ -5,13 +5,13 @@
 .container{
     @apply 
     w-full mx-auto px-[15px]
-    /* md:max-w-full  */
+    md:w-full
     lg:max-w-[970px] xl:max-w-[1170px]
 }
 
 @layer base {
     body{
-        @apply font-text-nm
+        @apply font-text-nm text-base leading-[26px]
         /* leading-[1.6] font-normal; */
     }
   }
@@ -206,29 +206,89 @@
     jump to 2 col at 970px
     jump to 1 col at 741px */
 
-    /* pixel perfect pro firefox */
+    .homeBanner{
+        @apply bg-banner_bg bg-lgray
+        bg-400% bg-top
+        animate-bannerSlide
+    }
+
+    .homeBanner__wrapper button{
+        @apply font-semibold
+    }
+
+    .activities .container{
+        @apply sm:max-w-[95%]
+    }
+    .activities__card{
+        @apply flex flex-col items-center w-full
+        md:max-w-[350px] relative ring-1 ring-gray-300 shadow-2xl
+    }
+    .activities__card__img{
+        @apply overflow-hidden w-full h-[200px]
+    }
+    .activities__card__img img{
+        @apply object-cover object-center w-full h-[192px]
+        transform transition-all duration-500
+        hover:scale-[1.2]
+    }
+    .activities__card__details{
+        @apply  max-w-[85%] flex flex-col items-center text-center py-[25px] mb-[60px]
+    }
+    .activities__card__details h3{
+        @apply text-xl font-medium
+    }
+    .activities__card__details h3, .activities__card__details p{
+        @apply mb-5
+    }
+    .activities__card button{
+        @apply absolute bottom-0
+        hover:translate-y-[0.75px]
+    }
+
+
+    
+    .offer__entry{
+        @apply w-full lg:w-[92%] mx-auto mb-[60px]
+    }
+    .offer__entry__label i{
+        @apply text-[50px] mb-2
+    }
+    .offer__entry__label h3{
+        @apply text-xl h-[76px]
+    }
+
+    .offer__entry__details{
+        @apply list-circle
+    }
+    .offer__entry__details li{
+        @apply leading-[2]
+    }
 
     .footer *{
-        @apply text-center md:text-left text-[0.7rem] text-light
+        @apply text-center md:text-left text-[11px] text-light
     }
     .footer i{
         @apply text-[1rem] w-4 h-4 text-center flex justify-center items-center
     }
     .footer h4{
-        @apply mb-[20px] text-base font-bold
+        @apply mb-[20px] text-base font-semibold
     }
-    .footer__socials, .footer__links, {
-        @apply px-[0.9375rem];
+    .footer__links::before, .footer__contact::before{
+        @apply hidden lg:block
+        absolute top-0 bottom-0
+        h-full w-[1px] content-['']
+        bg-gray-300
+        /* border-l-[1px] border-l-gray-300 */
+    }
+    .footer__contact, .footer__socials, .footer__links{
+        @apply pb-[40px];
     }
     .footer__socials__links a i{
-        @apply px-[10px] py-0 text-xl
-    }
-    .footer__links{
-        @apply items-center
-        border-gray_alt lg:border-l-[1px] lg:border-r-[1px];
+        @apply px-[10px] py-0 text-[21px]
     }
     .footer__contact span{
         @apply flex gap-2 justify-center lg:justify-start
+        py-[2px]
     }
 }
 
@@ -242,7 +302,8 @@
     }
     .btn.bg--magentah{
         @apply bg-magentah text-light
-        hover:bg-light hover:text-magentah hover:border-magentah;
+        hover:bg-light hover:text-magentah 
+        hover:border-[1px] hover:border-magentah;
     }
     .btn.bg--transparent-w{
         @apply bg-transparent text-light

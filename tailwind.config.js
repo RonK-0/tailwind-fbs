@@ -16,6 +16,7 @@ module.exports = {
         logo_blk: "url('../dist/img/logo-fbs.png')",
         logo_wht: "url('../dist/img/logo-fbs-wht.png')",
         banner_bg: "url('../dist/img/bg3.svg')",
+        offer_bg: "url('../dist/img/home/what-we-offer-bg-scaled.jpg')",
         cta: "radial-gradient(circle farthest-side at center bottom, #e81a86, #6a103f 125%)"
       },
       colors:{
@@ -27,7 +28,6 @@ module.exports = {
       },
       fontFamily: {
         'text-nm': ["Montserrat", "sans-serif"],
-        'text-xb': ["Montserrat Extrabold", "sans-serif"],
       },
       fontSize: {
       },
@@ -39,6 +39,19 @@ module.exports = {
       //   square: 'square',
       //   roman: 'upper-roman',
       },
+      backgroundSize: {
+        '400%': '400% 400%'
+      },
+      animation: {
+        'bannerSlide': 'bannerSlide 10s ease forwards',
+      },
+      keyframes: {
+        'bannerSlide': {
+          '0%' : {'background-position': '25% 0%'},
+          '100%' : {'background-position': '40% 80%'}
+        }
+      },
+
     },
   },
   plugins: [],
