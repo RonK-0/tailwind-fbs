@@ -11,7 +11,8 @@
 
 @layer base {
     body{
-        @apply font-text-nm text-base leading-[26px]
+        @apply font-text-nm text-base 
+        leading-[26px] text-dark
         /* leading-[1.6] font-normal; */
     }
   }
@@ -208,12 +209,7 @@
 
     .homeBanner{
         @apply bg-banner_bg bg-lgray
-        bg-400% bg-top
-        animate-bannerSlide
-    }
-
-    .homeBanner__wrapper button{
-        @apply font-semibold
+        bg-400% animate-bannerSlide_m md:animate-bannerSlide
     }
 
     .activities .container{
@@ -245,7 +241,6 @@
         hover:translate-y-[0.75px]
     }
 
-
     
     .offer__entry{
         @apply w-full lg:w-[92%] mx-auto mb-[60px]
@@ -256,13 +251,31 @@
     .offer__entry__label h3{
         @apply text-xl h-[76px]
     }
-
-    .offer__entry__details{
-        @apply list-circle
-    }
     .offer__entry__details li{
         @apply leading-[2]
     }
+
+    .cTestimonial__entry{
+        @apply  grid lg:grid-cols-2 items-center
+    }
+    .cTestimonial__entry__person img{
+        @apply max-w-[320px] max-h-[320px] mx-auto
+    }
+    p.cTestimonial__entry__quote{
+        @apply font-extrabold text-center leading-[30px]
+        w-full lg:max-w-[364.5px] xl:max-w-[464.5px]
+        relative
+    }
+    p.cTestimonial__entry__quote i{
+        @apply text-[108px] text-gray-200
+    }
+    p.cTestimonial__entry__quote i:first{
+        @apply absolute top-[-70px] left-[-50px]
+    }
+    p.cTestimonial__entry__quote i:last{
+        @apply absolute bottom-[-70px] right-[-50px]
+    }
+
 
     .footer *{
         @apply text-center md:text-left text-[11px] text-light

@@ -1,3 +1,8 @@
+// AOS init and set animations to occur only once
+AOS.init({
+    once: true
+});
+
 // const burg = document.querySelector(".burger");
 // const nav = document.querySelector("nav");
 // const bodih = document.querySelector("body");
