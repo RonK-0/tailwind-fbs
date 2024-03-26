@@ -10,22 +10,21 @@
 
 @layer base {
     body{
-        @apply font-text-nm text-base 
-        leading-[26px] text-dark
-        /* leading-[1.6] font-normal; */
+        @apply font-text-nm text-base leading-[26px] text-dark
     }
+    p{ @apply mb-5 }
+    h1, h2{ @apply leading-[1.3]}
+    h2{ @apply mb-[60px] }
+    h1, h2 { @apply text-3xl }
+    h3 { @apply text-xl }
   }
 
 @layer components{
-    body.open{  
-        @apply overflow-hidden;
-    }
+    body.open{  @apply overflow-hidden; }
 
     /* START OF HEADER */
     .header{
-        @apply fixed top-0 z-50
-        lg:static 
-        w-full bg-light
+        @apply z-50 w-full bg-light
     }
     .nav{
         @apply bg-light
@@ -60,18 +59,20 @@
         @apply relative h-fit lg:h-[75px] transition-all duration-500
     }
     .nav ul.nav_menu>li>ul.submenu{
-        @apply relative lg:absolute left-0 lg:top-[78px] bg-[#480f2d] lg:bg-light lg:text-magentah
-        text-center w-full lg:w-[275px] hidden
-        lg:transition-all duration-500
+        @apply hidden relative lg:absolute left-0 lg:top-[78px]
+        w-full lg:w-[275px]
+        bg-[#480f2d] lg:bg-light 
+        lg:text-magentah text-center
+        lg:transition-all lg:duration-500
     }
     .nav ul.nav_menu>li:nth-child(3):hover ul.submenu{
         @apply block lg:px-[11px] lg:py-[10px] 
     }
     .nav ul.submenu>li{
         @apply h-[36px] w-full border-none 
-        flex items-center justify-center lg:justify-start
-        text-center lg:text-left
-        lg:relative
+        flex f-center lg:justify-start
+        text-center lg:text-left lg:relative
+        hover:bg-magentah
     }
     .nav ul.nav_menu>li::after{
         @apply lg:absolute lg:bottom-[10px] lg:left-1/2
@@ -137,13 +138,6 @@
     git branch -M main
     git push -u origin main */
 
-
-    /* temp solution to make animation work on both desktop and mobile */
-    
-    /* @keyframes bannerSlide {
-        0% { background-position: 25% 0%}
-        100% { background-position: 40% 80% }
-    } */
     
     .pageBanner{
         @apply bg-banner_bg bg-lgray bg-400%
@@ -151,6 +145,7 @@
         /* animate-bannerSlide_m */
         animate-bannerSlide
     }
+    /* temp solution to make animation work on both desktop and mobile */
     @media (max-width: 768px) {
         @keyframes bannerSlide {
             0% { background-position: 25% 50%}
@@ -165,7 +160,6 @@
     }
     
 
-    
     .offer__entry{
         @apply w-full lg:w-[92%] mx-auto mb-[60px]
     }
@@ -173,42 +167,38 @@
         @apply text-[50px] mb-2
     }
     .offer__entry__label h3{
-        @apply text-xl h-[76px]
+        @apply h-[76px]
     }
     .offer__entry__details li{
         @apply leading-[2]
     }
 
 
-    .activities .container{
+    .news .container{
         @apply max-w-[96.35%] lg:max-w-[970px] xl:max-w-[1170px]
         w-full md:w-full
     }
-    .activities__card{
+    .news__card{
         @apply flex flex-col items-center
         /* w-full md:max-w-[350px] */
         relative shadow-card_shadow
     }
-    .activities__card__img{
+    .news__card__img{
         @apply overflow-hidden w-full h-[200px]
     }
-    .activities__card__img img{
+    .news__card__img img{
         @apply object-cover object-center w-full h-[192px]
         transform transition-all duration-500
         hover:scale-[1.2]
     }
-    .activities__card__details{
-        @apply  max-w-[85%] flex flex-col items-center text-center py-[25px] mb-[60px]
+    .news__card__details{
+        @apply  max-w-[85%] flex flex-col items-center text-center py-[25px] mb-80x
     }
-    .activities__card__details h3{
-        @apply text-xl font-medium
+    .news__card__details h3{
+        @apply font-medium mb-5
     }
-    .activities__card__details h3, .activities__card__details p{
-        @apply mb-5
-    }
-    .activities__card button{
+    .news__card button{
         @apply absolute bottom-0
-        hover:translate-y-[0.75px]
     }
 
 
@@ -261,7 +251,7 @@
         @apply text-[1rem] w-4 h-4 text-center flex justify-center items-center
     }
     .footer h4{
-        @apply mb-[20px] text-sm font-semibold
+        @apply mb-[20px] text-sm ft-sb
     }
     .footer span{
         @apply text-gray-200 
@@ -278,30 +268,90 @@
         @apply flex gap-2 justify-center lg:justify-start
         py-[1px]
     }
+
+
+    .team__wrapper .team__member{
+        @apply hidden lg:block
+        absolute bottom-0
+        transition-all duration-500
+    }
+    .team__member{
+        @apply transition-all duration-500
+    }
+    .team__member .team__member__position{
+        @apply hidden transition-all duration-500 relative
+    }
+    .team__member img{
+        @apply grayscale transition-all duration-500
+    }
+    .team__member:hover img{
+        @apply grayscale-0 transition-all duration-500
+    }
+    .team__member:hover .team__member__position{
+        @apply block transition-all duration-300 animate-name
+    }
+    #team-jj { @apply left-[56px] z-[2] }
+    #team-jj .team__member__position{ @apply right-[32.5px] }
+
+    #team-jeff { @apply left-[126px] z-[1] }
+    #team-jeff .team__member__position{ @apply left-[20px] }
+
+    #team-ada { @apply left-[322px] z-[2] }
+    #team-ada .team__member__position{ @apply right-[20px] }
+
+    #team-bea { @apply left-[418px] z-[3] }
+
+    #team-patrick { @apply left-[555px] z-[2] }
+    #team-patrick .team__member__position{ @apply right-[32.5px] }
+
+    #team-ralph { @apply left-[703px] z-[1] }
+    #team-ralph .team__member__position{ @apply right-[24.5px] }
+
+    #team-michael { @apply left-[805px] z-[1] }
 }
 
 @layer utilities{
     .btn{
         @apply inline-block
         rounded-[1.875rem]
-        font-bold text-center
+        ft-sb text-center
         py-[0.8125rem] px-[1.5625rem]
-        transition-all;
+        border-[1px] border-transparent
+        transition-all duration-500;
     }
     .btn.bg--magentah{
         @apply bg-magentah text-light
         hover:bg-light hover:text-magentah 
-        hover:border-[1px] hover:border-magentah;
+        hover:border-magentah;
     }
     .btn.bg--transparent-w{
         @apply bg-transparent text-light
-        border-[1px] border-light
+        border-light
         hover:bg-light hover:text-magentah;
     }
     .btn.bg--transparent{
         @apply bg-transparent text-magentah
-        border-[1px] border-magentah
+        border-magentah
         hover:bg-magentah/10 hover:text-magentah
         hover:border-magentah/10;
     }
+    .f-col{ @apply flex flex-col }
+    .f-center {@apply items-center justify-center }
+
+    .ft-sb{ @apply font-semibold }
+    .ft-b{ @apply font-bold }
+    .ft-ex{ @apply font-extrabold }
+
+    .mb-30x{ @apply mb-[30px] }
+    .mb-40x{ @apply mb-[40px] }
+    .mb-60x{ @apply mb-[60px] }
+    .mb-80x{ @apply mb-[80px] }
+    .no-mb{ @apply mb-0 }
+    .mx-a{ @apply mx-auto }
+
+    .tx-a{ @apply left-1/2 -translate-x-1/2 }
+
+    .py-5v{ @apply py-[5vh] }
+    .py-10v{ @apply py-[10vh] }
+    .py-15v{ @apply py-[15vh] }
 }

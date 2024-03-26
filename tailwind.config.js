@@ -45,6 +45,7 @@ module.exports = {
       animation: {
         'bannerSlide': 'bannerSlide 15s ease forwards',
         'bannerSlide_m': 'bannerSlide_m 15s ease forwards',
+        'name': 'name 0.3s linear',
       },
       keyframes: {
         'bannerSlide': {
@@ -54,6 +55,10 @@ module.exports = {
         'bannerSlide_m': {
           '0%' : {'background-position': '20% 50%'},
           '100%' : {'background-position': '50% 80%'}
+        },
+        'name': {
+          '0%' : {'opacity': '0', transform: 'translateY(20px)'},
+          '100%' : {'opacity': '1', transform: 'translateY(0px)'}
         },
       },
       boxShadow:{
