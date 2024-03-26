@@ -449,6 +449,8 @@ html, html:focus-within {
 }
 
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -802,6 +804,17 @@ body.open {
     text-align: left;
   }
 
+  .nav ul.submenu>li:hover {
+    background-color: inherit;
+  }
+}
+
+.nav ul.nav_menu>li>a, .nav ul.submenu>li>a {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
   .nav ul.nav_menu>li::after {
     position: absolute;
     bottom: 10px;
@@ -1500,14 +1513,6 @@ div.backTop.shown {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1556,12 +1561,12 @@ div.backTop.shown {
   width: 100%;
 }
 
-.max-w-\[895px\] {
-  max-width: 895px;
-}
-
 .max-w-\[200px\] {
   max-width: 200px;
+}
+
+.max-w-\[895px\] {
+  max-width: 895px;
 }
 
 .grow {
@@ -1600,12 +1605,20 @@ div.backTop.shown {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-9 {
@@ -1618,18 +1631,6 @@ div.backTop.shown {
 
 .gap-\[40px\] {
   gap: 40px;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.text-ellipsis {
-  text-overflow: ellipsis;
 }
 
 .rounded-full {
@@ -1681,16 +1682,12 @@ div.backTop.shown {
   padding-bottom: 94px;
 }
 
-.pt-\[10vh\] {
-  padding-top: 10vh;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-\[10vh\] {
+  padding-top: 10vh;
 }
 
 .text-left {
@@ -1881,10 +1878,6 @@ div.backTop.shown {
     margin-left: 0px;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1912,6 +1905,16 @@ div.backTop.shown {
   .md\:gap-7 {
     gap: 1.75rem;
   }
+
+  .md\:py-\[11\.25vh\] {
+    padding-top: 11.25vh;
+    padding-bottom: 11.25vh;
+  }
+
+  .md\:py-10v {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1927,6 +1930,10 @@ div.backTop.shown {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-full {
@@ -1961,17 +1968,12 @@ div.backTop.shown {
     justify-content: flex-start;
   }
 
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .lg\:gap-0 {
     gap: 0px;
   }
 
-  .lg\:py-\[11\.25vh\] {
-    padding-top: 11.25vh;
-    padding-bottom: 11.25vh;
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:pl-\[12px\] {
@@ -1980,11 +1982,6 @@ div.backTop.shown {
 
   .lg\:text-left {
     text-align: left;
-  }
-
-  .lg\:py-10v {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
   }
 
   .lg\:py-15v {

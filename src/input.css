@@ -11,7 +11,7 @@
 @layer base {
     html, html:focus-within { @apply scroll-smooth !important }
     body{
-        @apply font-text-nm text-base leading-[26px] text-dark
+        @apply font-text-nm text-base leading-[26px] text-dark overflow-y-scroll overflow-x-hidden
     }
     p{ @apply mb-5 }
     h1, h2{ @apply leading-[1.3]}
@@ -73,7 +73,10 @@
         @apply h-[36px] w-full border-none 
         flex f-center lg:justify-start
         text-center lg:text-left lg:relative
-        hover:bg-magentah
+        hover:bg-magentah hover:lg:bg-inherit
+    }
+    .nav ul.nav_menu>li>a, .nav ul.submenu>li>a{
+        @apply block w-full
     }
     .nav ul.nav_menu>li::after{
         @apply lg:absolute lg:bottom-[10px] lg:left-1/2
