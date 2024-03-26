@@ -128,24 +128,9 @@
         @apply top-[18px] w-0 right-1/2
     }
 
-
-    /* 
-    echo "# tailwind-fbs" >> README.md
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git branch -M main
-    git remote add origin https://github.com/RonK-0/tailwind-fbs.git
-    git push -u origin main */
-
-    /* git remote add origin https://github.com/RonK-0/tailwind-fbs.git
-    git branch -M main
-    git push -u origin main */
-
     
     .pageBanner{
         @apply bg-banner_bg bg-lgray bg-400%
-        /* bg-no-repeat */
         /* animate-bannerSlide_m */
         animate-bannerSlide
     }
