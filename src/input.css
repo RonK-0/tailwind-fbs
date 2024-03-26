@@ -193,6 +193,7 @@
 
     .cTestimonial__entries .cTestimonial__entry{
         @apply pb-4 overflow-hidden
+       select-none  /* make slider text unselectable for better click to tap sliding */
     }
     .cTestimonial__entry .cTestimonial__entry__content{
         @apply grid lg:grid-cols-2 items-center py-4 gap-8 lg:gap-0 w-full
@@ -201,20 +202,24 @@
         @apply max-w-[320px] max-h-[320px] mx-auto
     }
     .cTestimonial__entry__quote{
-        @apply relative flex flex-col justify-center overflow-visible
+        @apply relative flex flex-col justify-center overflow-visible top-[10px]
         w-full lg:max-w-[364.5px] xl:max-w-[464.25px] mx-auto
     }
     .cTestimonial__entry__quote p{
         @apply font-extrabold text-center leading-[30px] z-10
     }
     .cTestimonial__entry__quote i{
-        @apply text-[72px] md:text-[108px] text-[#bbbbbb] opacity-50 scale-y-110
+        @apply text-[72px] xl:text-[108px] text-[#bbbbbb] opacity-50 scale-y-110
     }
     .cTestimonial__entry__quote i.fa-quote-left{
-        @apply absolute top-[-40px] md:top-[-50px] lg:top-[-70px] left-0 lg:left-[-40px]
+        @apply absolute 
+        top-[-40px] md:top-[-50px] lg:top-[-30px] xl:top-[-60px] 
+        left-0 xl:left-[-45px]
     }
     .cTestimonial__entry__quote i.fa-quote-right{
-        @apply absolute bottom-[-40px] md:bottom-[-50px] lg:bottom-[-70px] right-0 lg:right-[-40px]
+        @apply absolute 
+        bottom-[-40px] lg:bottom-[-30px]
+        right-0 xl:right-[-40px]
     }
     .cTestimonial__wrapper .tns-outer{
         @apply relative
