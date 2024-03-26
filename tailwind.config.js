@@ -43,14 +43,14 @@ module.exports = {
         '400%': '400% 400%'
       },
       animation: {
-        // 'bannerSlide': 'bannerSlide 15s ease forwards',
+        'bannerSlide': 'bannerSlide 15s ease forwards',
         'bannerSlide_m': 'bannerSlide_m 15s ease forwards',
       },
       keyframes: {
-        // 'bannerSlide': {
-        //   '0%' : {'background-position': '25% 0%'},
-        //   '100%' : {'background-position': '40% 80%'}
-        // },
+        'bannerSlide': {
+          '0%' : {'background-position': '25% 0%'},
+          '100%' : {'background-position': '40% 80%'}
+        },
         'bannerSlide_m': {
           '0%' : {'background-position': '20% 50%'},
           '100%' : {'background-position': '50% 80%'}

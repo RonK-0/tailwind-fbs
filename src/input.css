@@ -24,7 +24,8 @@
     /* START OF HEADER */
     .header{
         @apply fixed top-0 z-50
-        lg:static w-full bg-light
+        lg:static 
+        w-full bg-light
     }
     .nav{
         @apply bg-light
@@ -60,7 +61,7 @@
     }
     .nav ul.nav_menu>li>ul.submenu{
         @apply relative lg:absolute left-0 lg:top-[78px] bg-[#480f2d] lg:bg-light lg:text-magentah
-        text-center w-full lg:w-[230%] hidden
+        text-center w-full lg:w-[275px] hidden
         lg:transition-all duration-500
     }
     .nav ul.nav_menu>li:nth-child(3):hover ul.submenu{
@@ -86,7 +87,7 @@
     }
     .nav ul.nav_menu>li:hover::after, .nav ul.submenu>li:hover::after{
         @apply lg:w-full lg:left-0
-        lg:transition-all lg:duration-200
+        lg:transition-all lg:duration-500
     }
     /* .burger */
     .burger {
@@ -138,24 +139,33 @@
 
 
     /* temp solution to make animation work on both desktop and mobile */
-    @media (min-width: 768px) {
-        keyframes bannerSlide {
-            0% { background-position: 25% 0%}
-            100% { background-position: 40% 80% }
-          }
-      
-        .homeBanner {
-          animation: bannerSlide 15s ease forwards;
+    
+    /* @keyframes bannerSlide {
+        0% { background-position: 25% 0%}
+        100% { background-position: 40% 80% }
+    } */
+    
+    .pageBanner{
+        @apply bg-banner_bg bg-lgray bg-400%
+        /* bg-no-repeat */
+        /* animate-bannerSlide_m */
+        animate-bannerSlide
+    }
+    @media (max-width: 768px) {
+        @keyframes bannerSlide {
+            0% { background-position: 25% 50%}
+            100% { background-position: 50% 80% }
         }
     }
-    .homeBanner{
-        @apply bg-banner_bg bg-lgray
-        bg-400% animate-bannerSlide_m
-        /* md:animate-bannerSlide */
+    @media (max-width: 450px) {
+        @keyframes bannerSlide {
+            0% { background-position: 25% 50%}
+            100% { background-position: 60% 83% }
+        }
     }
     
 
-
+    
     .offer__entry{
         @apply w-full lg:w-[92%] mx-auto mb-[60px]
     }

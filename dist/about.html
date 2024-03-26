@@ -30,12 +30,11 @@
 <body id="top">
     <header class="header" id="header">
         <div class="container">
-            <div class="header__wrapper flex items-center justify-between mx-auto h-[75px] lg:mx-[-2px]">
-                <a href="https://frontlinebusiness.com.ph" ><img loading="lazy" src="./img/logo-fbs.png" alt="FBS LOGO" class=""></a>
+            <div class="header__wrapper flex items-center justify-between mx-auto h-[75px] lg:mx-[-3px]">
+                <a href="https://frontlinebusiness.com.ph" ><img loading="lazy" src="./img/logo-fbs.png" alt="FBS LOGO" class="relative left-[-2px]"></a>
                 <nav class="nav">
                     <ul class="nav_menu">
-                        <!-- li*7>a{HOME} -->
-                        <li id="menu-item"><a href="#top">HOME</a></li>
+                        <li id="menu-item"><a href="./index.html">HOME</a></li>
                         <li id="menu-item"><a href="./about.html">ABOUT</a></li>
                         <li id="menu-item">
                             <a href="#services">SERVICES</a>
@@ -59,18 +58,17 @@
 
     <section class="h-[75px] lg:hidden"></section> <!-- SPACER FOR NAV FIXED ON MOBILE -->
     
-    <section class="homeBanner py-[5vh] flex items-center justify-center">
+    <section class="pageBanner py-[5vh] lg:py-[11.25vh] flex items-center justify-center">
         <div class="container">
-            <div class="homeBanner__wrapper flex flex-col lg:flex-row lg:justify-between items-center gap-4">
-                <div class="homeBanner__text flex flex-col text-left w-[92%] lg:w-full lg:max-w-[540px] mx-auto lg:mx-0 justify-center lg:justify-start" data-aos="fade-up" data-aos-duration="500">
-                    <h1 class="text-3xl mb-5 leading-[1.3]">Excellence in <span class="font-extrabold">Managed Services</span> and <span class="font-extrabold">Web Solutions</span></h1>
-                    <p class="mb-5">Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.</p>
-                    <div><button class="btn bg--magentah font-semibold">OUR SERVICES</button></div>
+            <div class="pageBanner__wrapper flex flex-col lg:flex-row justify-center items-center gap-4">
+                <div class="pageBanner__text flex flex-col text-left w-[92%] lg:w-full lg:max-w-[540px] mx-auto lg:mx-0 justify-center lg:justify-start" data-aos="fade-up" data-aos-duration="500">
+                    <h1 class="text-3xl mb-5 leading-[1.3]"><span class="font-extrabold">About</span> Us</h1>
+                    <p class="mb-5">As a social enterprise company, we are "in business for good." Our commitment is to leverage business success for the good of people and the communities in which we exist. Our vision and mission is successful business that maintains harmony between the three goals of excellent products and services, revenue generation, and positive social impacts.</p>
+                    <div><button class="btn bg--magentah font-semibold">CONTACT US</button></div>
                 </div>
-                <div class="homeBanner__img" data-aos="fade-up" data-aos-duration="500" data-aos-delay="750" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/home/fbs-banner-bg.png" alt=""></div>
+                <div class="pageBanner__img mx-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="750" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/about/about-us-540.svg" alt=""></div>
             </div>
         </div>
-        <!-- section.homeBanner>.container>.homeBanner__wrapper.grid.lg:grid-cols-2>(.homeBanner__text.flex.flex-col.text-left>h1.text-3xl{Excellence in <span class="font-extrabold">Managed Services</span> and <span class="font-extrabold">Web Solutions</span>}+p{Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.})+(.homeBanner__img>img[src="./img/home/fbs-banner-bg.png"]) -->
     </section>
 
     
