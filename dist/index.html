@@ -35,7 +35,7 @@
                 <nav class="nav">
                     <ul class="nav_menu">
                         <!-- li*7>a{HOME} -->
-                        <li id="menu-item"><a href="#top">HOME</a></li>
+                        <li id="menu-item"><a href="#">HOME</a></li>
                         <li id="menu-item"><a href="./about.html">ABOUT</a></li>
                         <li id="menu-item">
                             <a href="#services">SERVICES</a>
@@ -57,7 +57,7 @@
         </div>
     </header>
     
-    <section class="pageBanner py-5v lg:py-15v flex f-center">
+    <section class="pageBanner py-5v lg:py-10v flex f-center">
         <div class="container">
             <div class="pageBanner__wrapper grid lg:grid-cols-2 items-center gap-4">
                 <div class="pageBanner__text f-col text-left w-[92%] lg:w-full lg:max-w-[540px] mx-a lg:mx-0 justify-center lg:justify-start" data-aos="fade-up" data-aos-duration="500">
@@ -65,7 +65,7 @@
                     <p>Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.</p>
                     <div><button class="btn bg--magentah ft-sb">OUR SERVICES</button></div>
                 </div>
-                <div class="pageBanner__img mx-a" data-aos="fade-up" data-aos-duration="500" data-aos-delay="750" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/home/fbs-banner-bg.png" alt=""></div>
+                <div class="pageBanner__img mx-a" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1250" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/home/fbs-banner-bg.png" alt=""></div>
             </div>
         </div>
         <!-- section.pageBanner>.container>.pageBanner__wrapper.grid.lg:grid-cols-2>(.pageBanner__text.flex.flex-col.text-left>h1{Excellence in <span class="ft-ex">Managed Services</span> and <span class="ft-ex">Web Solutions</span>}+p{Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.})+(.pageBanner__img>img[src="./img/home/fbs-banner-bg.png"]) -->
@@ -285,7 +285,7 @@
         <div class="container">
             <h2 class="text-center"><span class="ft-ex">Events</span> and <span class="ft-ex">Activities</span></h2>
             <div class="news__wrapper f-col items-center w-full">
-                <div class="news__cards grid md:grid-cols-3 gap-9 md:gap-7 mb-60">
+                <div class="news__cards grid md:grid-cols-3 gap-9 md:gap-7 mb-60x">
                     <div class="news__card" data-aos="fade-up" data-aos-duration="1000">
                         <div class="news__card__img"><img loading="lazy" src="./img/home/cards/5th-year-thumb_3-350x192.jpg" alt=""></div>
                         <div class="news__card__details">
@@ -322,7 +322,7 @@
     <footer class="footer bg-magentah py-5v relative">
         <!-- .container>.footer__wrapper.grid.grid-cols-1.md:grid-cols-3>.footer__socials+.footer__links+.footer__contact -->
         <div class="container">
-            <div class="footer__wrapper relative grid grid-cols-1 md:grid-cols-3 justify-center gap-[40px] md:gap-0 mb-40">
+            <div class="footer__wrapper relative grid grid-cols-1 md:grid-cols-3 justify-center gap-[40px] md:gap-0 mb-40x">
                 <div class="footer__socials f-col justify-center lg:justify-start items-center">
                     <div class="footer__socials__logo f-col items-center mb-6">
                         <img loading="lazy" src="./img/logo-fbs-wht.png" alt="" class="w-[200px]">
@@ -354,6 +354,8 @@
             </div>
         </div>
     </footer>
+
+    <div class="backTop"><button class="fas fa-caret-up text-5xl font-black text-light" onclick="scrollToTop()"></button></div>
 
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>

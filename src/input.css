@@ -9,6 +9,7 @@
 }
 
 @layer base {
+    html, html:focus-within { @apply scroll-smooth !important }
     body{
         @apply font-text-nm text-base leading-[26px] text-dark
     }
@@ -269,6 +270,18 @@
         py-[1px]
     }
 
+    div.backTop{
+        @apply fixed bottom-[2.5%] right-[2.5%]
+        w-[60px] h-[60px] bg-dark/65
+        border-[1px] border-light
+        f-col f-center opacity-0 hidden
+        transition-all duration-500
+    }
+    div.backTop.shown{
+        @apply opacity-100 f-col
+        transition-all duration-500
+    }
+
 
     .team__wrapper .team__member{
         @apply hidden lg:block
@@ -308,6 +321,10 @@
     #team-ralph .team__member__position{ @apply right-[24.5px] }
 
     #team-michael { @apply left-[805px] z-[1] }
+
+    .partners__list li{
+        @apply mx-[45px] my-[40px] w-full max-w-[270px] f-col f-center
+    }
 }
 
 @layer utilities{

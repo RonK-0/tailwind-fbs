@@ -30,8 +30,8 @@
 <body id="top">
     <header class="header" id="header">
         <div class="container">
-            <div class="header__wrapper flex items-center justify-between mx-a h-[75px] lg:mx-[-3px]">
-                <a href="https://frontlinebusiness.com.ph" ><img loading="lazy" src="./img/logo-fbs.png" alt="FBS LOGO" class="relative left-[-2px]"></a>
+            <div class="header__wrapper flex items-center justify-between mx-a h-[75px] lg:mx-[-3px] gap-8 lg:gap-0">
+                <a href="https://frontlinebusiness.com.ph" class="max-w-[200px]" ><img loading="lazy" src="./img/logo-fbs.png" alt="FBS LOGO" class="relative left-[-2px]"></a>
                 <nav class="nav">
                     <ul class="nav_menu">
                         <li id="menu-item"><a href="./index.html">HOME</a></li>
@@ -64,7 +64,7 @@
                     <p>As a social enterprise company, we are "in business for good." Our commitment is to leverage business success for the good of people and the communities in which we exist. Our vision and mission is successful business that maintains harmony between the three goals of excellent products and services, revenue generation, and positive social impacts.</p>
                     <div><button class="btn bg--magentah ft-sb">CONTACT US</button></div>
                 </div>
-                <div class="pageBanner__img mx-a" data-aos="fade-up" data-aos-duration="500" data-aos-delay="750" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/about/about-us-540.svg" alt=""></div>
+                <div class="pageBanner__img mx-a" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1250" data-aos-anchor-placement="bottom-bottom"><img loading="lazy" src="./img/about/about-us-540.svg" alt=""></div>
             </div>
         </div>
     </section>
@@ -73,17 +73,17 @@
         <div class="container">
             <h2 class="text-center">"<span class="ft-ex">Partnering</span> with a <span class="ft-ex">company</span> committed to <span class="ft-ex">caring</span> about <span class="ft-ex">people</span> and <span class="ft-ex">community development</span>"."</h2>
             <div class="vmv__wrapper grid lg:grid-cols-3 lg:gap-8">
-                <div class="vmv__entry f-col items-center lg:items-start" data-aos="fade-right" data-aos-duration="750">
+                <div class="vmv__entry f-col items-center lg:items-start" data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="left">
                     <div class="h-[280px]"><img src="./img/about/vision.svg" alt="" class="h-[245px]"></div>
                     <h3 class="ft-ex mb-5">Vision</h3>
                     <p class="text-center lg:text-left">To be a globally competitive, premier provider of excellent business solutions, while sustaining a business model that will create positive social impact and make the Philippines an outstanding place to live and work.</p>
                 </div>
-                <div class="vmv__entry f-col items-center lg:items-start" data-aos="fade-up" data-aos-duration="750">
+                <div class="vmv__entry f-col items-center lg:items-start" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="bottom">
                     <div class="h-[280px]"><img src="./img/about/Mission.svg" alt="" class="h-[245px]"></div>
                     <h3 class="ft-ex mb-5">Mission</h3>
                     <p class="text-center lg:text-left">FBS is a Godly, caring company, committed to holistically equipping its people, developing local talents, providing high client satisfaction and positively impacting the communities in which it exists.</p>
                 </div>
-                <div class="vmv__entry f-col items-center lg:items-start" data-aos="fade-left" data-aos-duration="750">
+                <div class="vmv__entry f-col items-center lg:items-start" data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="right">
                     <div class="h-[280px] mt-4 -mb-4"><img src="./img/about/Values.svg" alt="" class="h-[245px]"></div>
                     <h3 class="ft-ex mb-5">Values</h3>
                     <ul class="text-center lg:text-left mb-5">
@@ -101,7 +101,6 @@
         </div>
         <!-- section.vmv>.container>h2{"<span class="ft-ex">Partnering</span> with a <span class="ft-ex">company</span> committed to <span class="ft-ex">caring</span> about <span class="ft-ex">people</span> and <span class="ft-ex">community development</span>"."}+(.vmv__wrapper.grid.lg:grid-cols-3>(.vmv__entry.flex.flex-col.items-center*3>img[src="./img/about/vision.svg"]+h3.ft-ex{Vision}+p{To be a globally competitive, premier provider of excellent business solutions, while sustaining a business model that will create positive social impact and make the Philippines an outstanding place to live and work.})) -->
     </section>
-
     
     <section class="team pt-[10vh] bg-lgray">
         <div class="team__header f-col items-center text-center mb-5">
@@ -165,8 +164,7 @@
         </div>
         <!-- section.team>.container>(.team__header.flex.flex-col.items-center.text-center>h2.text-center{Meet <span class="ft-ex">Our Team</span>}+p{We <span class="ft-ex">listen</span>, we <span class="ft-ex">discuss</span> and <span class="ft-ex">develop</span>.}+p{We work together with these enthusiastic individuals for extraordinary results.})+(.team__wrapper.relative.mx-a>((img.team__member_mobile[src="./img/about/team/fbs-team-2022-1.png"])+.team__member*7>(.team__member__position.hidden>p.ft-b{Jhonny Dichoso}+small{Supervisor, IT &amp; LCS})+img[src="./img/about/team/team-jj.png"])) -->
     </section>
-    
-    
+        
     <section class="cta bg-cta py-[94px] text-light text-center">
         <div class="container">
             <div class="cta__wrapper f-col items-center">
@@ -176,8 +174,77 @@
         </div>
         <!-- section.cta.bg-cta>.container>.cta__wrapper>h2{There are more things that you should focus on. Let us handle your IT work.} -->
     </section>
-
-
+    
+    <section class="partners py-10v">
+        <div class="container">
+            <h2 class="text-center">Some of our <span class="ft-ex">Clients and Partners</span></h2>
+            <div class="partners__wrapper mx-auto pt-7">
+                <ul class="partners__list flex flex-wrap f-center gap-2">
+                    <li>
+                        <a href="http://tazamiacoffee.com/"><img src="./img/about/clients/logo-tazamia.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://sanpablocolleges.edu.ph/"><img src="./img/about/clients/logo-spc.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://frontlinebusiness.com.ph/wp-content/uploads/2021/12/logo-spcms-300x56.png"><img src="./img/about/clients/logo-spcms-300x56.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.overthetop.com/"><img src="./img/about/clients/logo-ottm.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.gomissiontrip.com/"><img src="./img/about/clients/logo_black.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="http://www.pyrobusterenterprise.com/"><img src="./img/about/clients/logo-pyrobuster-black.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://fca.edu.ph/"><img src="./img/about/clients/fca-logo.webp" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.thefrontline.asia/"><img src="./img/about/clients/logo-pfm.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://frontlinethreadworks.com/"><img src="./img/about/clients/logo-threadworks.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="http://twomiles.net/en/"><img src="./img/about/clients/logo-2miles.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://ulticlean.net/"><img src="./img/about/clients/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.remotelink.com/"><img src="./img/about/clients/remotelink.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://strategiconlinecorp.com/"><img src="./img/about/clients/logo-soc.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://resoundstructuredcapital.com/"><img src="./img/about/clients/resound-structured-capital.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.avantadvisory.com/"><img src="./img/about/clients/logo-avant.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/about/clients/logo-see.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/about/clients/logo-balaiin.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/about/clients/logo-jardin.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/about/clients/logo-majathai.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://rebekahnicole.com/"><img src="./img/about/clients/rebekahnicole.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- section.partners>.container>h2.text-center{Some of our <span class="ft-ex">Clients and Partners</span>}+(.partners__wrapper>ul.partners__list>li*20>div>img[src="./img/about/clients/logo-tazamia.png"]) -->
+    </section>
 
     <footer class="footer bg-magentah py-5v relative">
         <div class="container">
@@ -213,6 +280,8 @@
             </div>
         </div>
     </footer>
+
+    <div class="backTop"><button class="fas fa-caret-up text-5xl font-black text-light" onclick="scrollToTop()"></button></div>
 
     <script src="./js/script.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
